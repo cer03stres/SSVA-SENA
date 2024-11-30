@@ -1,0 +1,200 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #fff;
+    padding: 20px 0;
+    height: 100px; /* Fijamos una altura fija para el header */
+    display: flex;
+    align-items: center; /* Centra las imágenes verticalmente */
+    justify-content: space-between; /* Espacio entre las imágenes */
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .logo-left, .logo-right {
+    height: 100%; /* Las imágenes se ajustan al alto del header */
+    max-width: 290px; /* Las imágenes tienen un tamaño máximo */
+    object-fit: contain; /* Mantiene la proporción de las imágenes */
+    width: auto;
+  }
+  
+  /* Login Form */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* To keep header and footer visible */
+  }
+  
+  .login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .input-group input:focus {
+    border-color: #39A900;
+  }
+  
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #39A900;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn-cancel, .btn-recover {
+    padding: 10px 21px; /* Aumenta la altura, ajusta el ancho */
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; /* Permite que los botones ocupen el mismo espacio */
+  }
+  .btn-recover {
+    background-color: #39A900; /* Botón "Recuperar Contraseña" */
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  .btn-recover:hover {
+    background-color: #32b200; /* Color de hover */
+  }
+  
+  .btn-cancel {
+    background-color: #ccc; /* Botón "Cancelar" */
+    color: #333;
+    border: none;
+    transition: background-color 0.3s;
+    text-decoration: none; /* para quitar el subrayado*/
+  }
+  
+  .btn-cancel:hover {
+    background-color: #999; /* Color de hover */
+  }
+  
+  .btn-recover:hover {
+    background-color: #32b200;
+  }
+  
+  /* Checkbox and Link Styles */
+  .checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-item input {
+    margin-right: 10px;
+  }
+  
+  .checkbox-item label {
+    font-size: 0.9rem;
+  }
+  
+  .password-link {
+    text-align: right;
+  }
+  
+  .password-link .link {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .password-link .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #39A900;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .logo-left, .logo-right {
+      max-width: 120px; /* Las imágenes se ajustan en pantallas pequeñas */
+    }
+
+    .btn-recover, .btn-cancel {
+        width: 100%; /* Los botones ocupan el 100% del ancho en pantallas pequeñas */
+        margin-right: 0;
+        margin-bottom: 10px; /* Añadir espacio entre botones apilados en pantallas pequeñas */
+      }
+  
+    .checkbox-group {
+      flex-direction: column; /* Coloca los checkboxes y el enlace en columna en pantallas pequeñas */
+      align-items: flex-start;
+    }
+  }
+  
