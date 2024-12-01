@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -85,7 +84,7 @@
   }
   
   .input-group input:focus {
-    border-color: #39A900;
+    border-color: #5bbf00; /* Un verde más suave */
   }
   
   .btn-login {
@@ -98,6 +97,11 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+  }
+
+  .btn-login:hover {
+    background-color: #32b200;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .btn-cancel, .btn-recover {
@@ -133,7 +137,8 @@
     background-color: #32b200;
   }
   
-  /* Checkbox and Link Styles */
+
+
   .checkbox-group {
     display: flex;
     justify-content: space-between;
@@ -165,6 +170,7 @@
   }
   
   .password-link .link:hover {
+    color: #0056b3; /* Un color de hover más oscuro */
     text-decoration: underline;
   }
   
@@ -182,8 +188,14 @@
   
   /* Responsive Styles */
   @media (max-width: 768px) {
+
+    footer p {
+      font-size: 0.8rem;
+    }
+
     .logo-left, .logo-right {
-      max-width: 120px; /* Las imágenes se ajustan en pantallas pequeñas */
+      max-width: 290px;
+      width: auto;
     }
 
     .btn-recover, .btn-cancel {
