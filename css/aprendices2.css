@@ -1,0 +1,128 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Ajusta este color según tu esquema */
+  }
+  
+  /* Flexbox y Layout */
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  .h-screen {
+    height: 100vh;
+  }
+  
+  .w-1/4 {
+    width: 25%;
+  }
+  
+  /* Estilos del Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd; /* Ajusta según tu diseño */
+    background-color: #fff; /* Ajusta según tu esquema */
+  }
+  
+  header h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333; /* Ajusta según tu esquema */
+  }
+  
+  /* Botones */
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Colores de botones */
+  .bg-secondary {
+    background-color: #4CAF50; /* Ajusta el color según tu esquema */
+    color: white;
+  }
+  
+  .bg-accent {
+    background-color: #FF5722; /* Ajusta el color según tu esquema */
+    color: white;
+  }
+  
+  .text-primary {
+    color: #333; /* Ajusta según tu esquema */
+  }
+  
+  .text-muted-foreground {
+    color: #888; /* Ajusta según tu esquema */
+  }
+  
+  .text-secondary-foreground {
+    color: #fff;
+  }
+  
+  /* Navegación */
+  nav {
+    background-color: #f9f9f9; /* Ajusta según tu esquema */
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+  }
+  
+  nav h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    color: #4CAF50; /* Ajusta el color del hover */
+  }
+  
+  /* Main section */
+  main {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  main .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

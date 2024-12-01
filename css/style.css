@@ -200,7 +200,7 @@
 
     .btn-recover, .btn-cancel {
         width: 100%; /* Los botones ocupan el 100% del ancho en pantallas pequeñas */
-        margin-right: 0;
+        margin-right: 0 ;
         margin-bottom: 10px; /* Añadir espacio entre botones apilados en pantallas pequeñas */
       }
   
